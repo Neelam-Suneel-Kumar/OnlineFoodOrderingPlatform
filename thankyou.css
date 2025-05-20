@@ -1,0 +1,70 @@
+/* Basic styles for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Styles for the container */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    margin: 20px;
+}
+
+/* Styles for the thank you message */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styles for the additional message */
+p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Styles for the order details section */
+#order-details {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#order-details h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#order-details p {
+    margin-bottom: 10px;
+}
+
+/* Styles for the view order button */
+#view-order {
+    background-color: #fac031;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#view-order:hover {
+    background-color: #e0a800;
+}

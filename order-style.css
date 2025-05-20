@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+/* Hamburger Menu Styles */
+nav .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s;
+}
+
+nav .hamburger:hover {
+    color: #fac031;
+}
+
+nav .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #fac031;
+}
+
+nav .icon i {
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .icon i:hover {
+    color: #fac031;
+}
+
+/* Order Section */
+section#order {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0 50px;
+    text-align: center;
+}
+
+section#order h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+section#order h1 span {
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+section#order p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.order-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fac031;
+}
+
+.form-section h2 span {
+    color: #fac031;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #fac031;
+    box-shadow: 0 0 5px rgba(250, 192, 49, 0.5);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-group .error {
+    color: #e74c3c;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.form-group .address-hint {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.order-item label {
+    font-size: 16px;
+}
+
+.order-item .quantity {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.order-btn {
+    background: #fac031;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #e0a800;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    padding: 30px 0;
+    background: #eeeeee;
+}
+
+footer .footer_main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+footer .footer_main .footer_tag {
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag p {
+    margin: 10px 0;
+}
+
+footer .footer_main .footer_tag i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover {
+    color: #fac031;
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .end span {
+    color: #fac031;
+    margin-left: 10px;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fac031;
+    border-radius: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    section#order h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    section#order h1 {
+        font-size: 40px;
+    }
+
+    section#order p {
+        font-size: 16px;
+    }
+
+    .order-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    nav .hamburger {
+        display: block;
+    }
+
+    nav .nav-menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav .nav-menu.active {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    nav .icon {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav .icon i {
+        font-size: 15px;
+    }
+
+    section#order h1 {
+        font-size: 35px;
+    }
+
+    section#order p {
+        font-size: 14px;
+    }
+
+    .form-section h2 {
+        font-size: 25px;
+    }
+
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-item .quantity {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav .logo img {
+        width: 120px;
+    }
+
+    section#order h1 {
+        font-size: 30px;
+    }
+
+    .form-section h2 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .form-group .error,
+    .form-group .address-hint {
+        font-size: 12px;
+    }
+
+    .order-item label {
+        font-size: 14px;
+    }
+
+    .order-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

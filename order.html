@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Cream More</title>
+    <link rel="stylesheet" href="order-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="image/Cream 3.png">
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#Menu">Menu</a></li>
+                <li><a href="index.html#Gallary">Gallary</a></li>
+                <li><a href="index.html#Review">Review</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Section -->
+    <section id="order">
+        <div class="container">
+            <h1>Place Your <span>Order</span></h1>
+            <p>Fill out the form below to order your favorite food from Cream More!</p>
+
+            <form class="order-form">
+                <!-- Customer Details -->
+                <div class="form-section">
+                    <h2>Customer Details</h2>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required maxlength="10">
+                        <span class="error" id="phone-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                        <span class="address-hint">Example: House No., Street Name, Area, City, State, PIN Code (e.g., 123, Main Street, East Gudur, Gudur, Andhra Pradesh, 524101)</span>
+                    </div>
+                </div>
+
+                <!-- Order Items -->
+                <div class="form-section">
+                    <h2>Select Items</h2>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Burger">
+                            Burger - ₹150
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Cone Ice Cream">
+                            Cone Ice Cream - ₹35
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Lasagna">
+                            Lasagna - ₹200
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Milk Shake">
+                            Milk Shake - ₹30
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Pizza">
+                            Pizza - ₹200
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Hot Dog">
+                            Hot Dog - ₹300
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Juice">
+                            Juice - ₹35
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Sundae Ice">
+                            Sundae Ice - ₹150
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Chocolate">
+                            Chocolate - ₹400
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Ice Cream">
+                            Ice Cream - ₹150
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Spanchi">
+                            Spanchi - ₹20
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                    <div class="order-item">
+                        <label>
+                            <input type="checkbox" name="item" value="Sandwich">
+                            Sandwich - ₹99
+                        </label>
+                        <input type="number" name="quantity" min="0" value="0" class="quantity">
+                    </div>
+                </div>
+
+                <!-- Total Price -->
+                <div class="form-section">
+                    <h2>Total Price: ₹<span id="total-price">0</span></h2>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="order-btn">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer_main">
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>
+                        <a href="https://www.google.com/maps/place/CREAM+MORE+ICE+CREAM+%26PIZZA+CORNER/@14.1461224,79.8506353,17z/data=!3m1!4b1!4m6!3m5!1s0x3a4ce300728c9803:0x85feecccf1a33150!8m2!3d14.1461172!4d79.8532102!16s%2Fg%2F11lnwwwsmd?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                            Sangam theatre, DBR Plaza, 206, GNT road, East Street, Gudur, East Gudur Rural, Andhra Pradesh 524101
+                        </a>
+                    </p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Quick Links</h2>
+                    <p><a href="index.html#Home">Home</a></p>
+                    <p><a href="index.html#About">About</a></p>
+                    <p><a href="index.html#Menu">Menu</a></p>
+                    <p><a href="index.html#Gallary">Gallery</a></p>
+                    <p><a href="index.html#Review">Reviews</a></p>
+                    <p><a href="order.html">Order</a></p>
+                    <p><a href="index.html#team">Our Team</a></p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p><a href="mailto:creamoreicecream@gmail.com">creamoreicecream@gmail.com</a></p>
+                    <p><a href="mailto:Shiva123@gmail.com">Shiva123@gmail.com</a></p>
+                    <p><a href="tel:+919543829338">+91 9543829338</a></p>
+                    <p><a href="tel:+918155772598">+91 8155772598</a></p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Our Service</h2>
+                    <p>Fast Delivery</p>
+                    <p>Easy Payments</p>
+                    <p>24 x 7 Service</p>
+                </div>
+
+                <div class="footer_tag">
+                    <h2>Follow Us on</h2>
+                    <a href="[Your Facebook Link]" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="[Your Twitter Link]" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="[Your Instagram Link]" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="[Your LinkedIn Link]" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i>Suneel Kumar</span></p>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu, Form Validation, and Functionality -->
+    <script>
+        // Hamburger Menu Functionality
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Form Functionality: Calculate Total Price, Validate Inputs, and Handle Submission
+        const form = document.querySelector('.order-form');
+        const nameInput = document.getElementById('name');
+        const phoneInput = document.getElementById('phone');
+        const addressInput = document.getElementById('address');
+        const nameError = document.getElementById('name-error');
+        const phoneError = document.getElementById('phone-error');
+        const items = [
+            { name: "Burger", price: 150 },
+            { name: "Cone Ice Cream", price: 35 },
+            { name: "Lasagna", price: 200 },
+            { name: "Milk Shake", price: 30 },
+            { name: "Pizza", price: 200 },
+            { name: "Hot Dog", price: 300 },
+            { name: "Juice", price: 35 },
+            { name: "Sundae Ice", price: 150 },
+            { name: "Chocolate", price: 400 },
+            { name: "Ice Cream", price: 150 },
+            { name: "Spanchi", price: 20 },
+            { name: "Sandwich", price: 99 }
+        ];
+
+        const checkboxes = document.querySelectorAll('.order-item input[type="checkbox"]');
+        const quantities = document.querySelectorAll('.order-item .quantity');
+        const totalPriceElement = document.getElementById('total-price');
+
+        // Calculate Total Price
+        function calculateTotal() {
+            let total = 0;
+            checkboxes.forEach((checkbox, index) => {
+                if (checkbox.checked) {
+                    const quantity = parseInt(quantities[index].value) || 0;
+                    const item = items.find(i => i.name === checkbox.value);
+                    total += item.price * quantity;
+                }
+            });
+            totalPriceElement.textContent = total;
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', calculateTotal);
+        });
+
+        quantities.forEach(quantity => {
+            quantity.addEventListener('input', calculateTotal);
+        });
+
+        // Validation Functions
+        function validateName(name) {
+            const nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces allowed
+            return nameRegex.test(name);
+        }
+
+        function validatePhone(phone) {
+            const phoneRegex = /^[6-9]\d{9}$/; // 10 digits, starting with 6, 7, 8, or 9 (Indian number)
+            return phoneRegex.test(phone);
+        }
+
+        // Restrict Input for Name (Only Letters and Spaces)
+        nameInput.addEventListener('keypress', (e) => {
+            const char = String.fromCharCode(e.keyCode || e.which);
+            const nameRegex = /^[A-Za-z\s]+$/;
+            if (!nameRegex.test(char)) {
+                e.preventDefault();
+            }
+        });
+
+        // Real-Time Validation for Name
+        nameInput.addEventListener('input', () => {
+            const name = nameInput.value.trim();
+            if (!name) {
+                nameError.textContent = 'Name is required.';
+            } else if (!validateName(name)) {
+                nameError.textContent = 'Name should contain only letters and spaces.';
+            } else {
+                nameError.textContent = '';
+            }
+        });
+
+        // Restrict Input for Phone (Only Numbers)
+        phoneInput.addEventListener('keypress', (e) => {
+            const char = String.fromCharCode(e.keyCode || e.which);
+            const phoneCharRegex = /^[0-9]+$/;
+            if (!phoneCharRegex.test(char)) {
+                e.preventDefault();
+            }
+        });
+
+        // Real-Time Validation for Phone
+        phoneInput.addEventListener('input', () => {
+            const phone = phoneInput.value.trim();
+            if (!phone) {
+                phoneError.textContent = 'Phone number is required.';
+            } else if (!validatePhone(phone)) {
+                phoneError.textContent = 'Please enter a valid 10-digit Indian phone number (starting with 6, 7, 8, or 9).';
+            } else {
+                phoneError.textContent = '';
+            }
+        });
+
+        // Form Submission with Validation
+        // Function to store order data in local storage
+        function storeOrderData() {
+            const orderedItems = [];
+            checkboxes.forEach((checkbox, index) => {
+                if (checkbox.checked) {
+                    const quantity = parseInt(quantities[index].value) || 0;
+                    orderedItems.push({ name: checkbox.value, quantity: quantity });
+                }
+            });
+            const orderData = {
+                customerName: nameInput.value.trim(),
+                phoneNumber: phoneInput.value.trim(),
+                 deliveryAddress: addressInput.value.trim(),
+                items: orderedItems,
+                totalPrice: totalPriceElement.textContent,
+            };
+            localStorage.setItem('orderData', JSON.stringify(orderData));
+        }
+
+
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Reset error messages
+            nameError.textContent = '';
+            phoneError.textContent = '';
+
+            // Get form values
+            const name = nameInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const address = addressInput.value.trim();
+            const total = totalPriceElement.textContent;
+
+            // Validate inputs
+            let isValid = true;
+
+            if (!name) {
+                nameError.textContent = 'Name is required.';
+                isValid = false;
+            } else if (!validateName(name)) {
+                nameError.textContent = 'Name should contain only letters and spaces.';
+                isValid = false;
+            }
+
+            if (!phone) {
+                phoneError.textContent = 'Phone number is required.';
+                isValid = false;
+            } else if (!validatePhone(phone)) {
+                phoneError.textContent = 'Please enter a valid 10-digit Indian phone number (starting with 6, 7, 8, or 9).';
+                isValid = false;
+            }
+
+            if (total === "0") {
+                alert("Please select at least one item to place an order.");
+                return;
+            }
+
+            if (isValid) {
+                storeOrderData();
+                window.location.href = 'thankyou.html';
+
+
+
+            }
+        });
+
+        // Initial calculation
+        calculateTotal();
+    </script>
+</body>
+
+</html>
